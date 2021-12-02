@@ -16,263 +16,53 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
 module.exports = {
     seed: (req, res) => {
         sequelize.query(`
-            drop table if exists cities;
-            drop table if exists countries;
-            
-            create table countries (
-                country_id serial primary key, 
-                name varchar
-                );
-                
-                CREATE TABLE cities (
-                    city_id SERIAL PRIMARY KEY,
-                    name VARCHAR(50),
-                    rating INTEGER,
-                    country_id serial
-                    );
-                    
-            INSERT INTO cities (name, rating, country_id)
-            VALUES ('Amsterdam', 4, 123), ('Barcelona', 4, 165), ('London', 2, 186), ('Ocho Rios', 5, 85);
-
-            insert into countries (name)
-            values ('Afghanistan'),
-            ('Albania'),
-            ('Algeria'),
-            ('Andorra'),
-            ('Angola'),
-            ('Antigua and Barbuda'),
-            ('Argentina'),
-            ('Armenia'),
-            ('Australia'),
-            ('Austria'),
-            ('Azerbaijan'),
-            ('Bahamas'),
-            ('Bahrain'),
-            ('Bangladesh'),
-            ('Barbados'),
-            ('Belarus'),
-            ('Belgium'),
-            ('Belize'),
-            ('Benin'),
-            ('Bhutan'),
-            ('Bolivia'),
-            ('Bosnia and Herzegovina'),
-            ('Botswana'),
-            ('Brazil'),
-            ('Brunei'),
-            ('Bulgaria'),
-            ('Burkina Faso'),
-            ('Burundi'),
-            ('Côte d''Ivoire'),
-            ('Cabo Verde'),
-            ('Cambodia'),
-            ('Cameroon'),
-            ('Canada'),
-            ('Central African Republic'),
-            ('Chad'),
-            ('Chile'),
-            ('China'),
-            ('Colombia'),
-            ('Comoros'),
-            ('Congo'),
-            ('Costa Rica'),
-            ('Croatia'),
-            ('Cuba'),
-            ('Cyprus'),
-            ('Czech Republic'),
-            ('Democratic Republic of the Congo'),
-            ('Denmark'),
-            ('Djibouti'),
-            ('Dominica'),
-            ('Dominican Republic'),
-            ('Ecuador'),
-            ('Egypt'),
-            ('El Salvador'),
-            ('Equatorial Guinea'),
-            ('Eritrea'),
-            ('Estonia'),
-            ('Eswatini'),
-            ('Ethiopia'),
-            ('Fiji'),
-            ('Finland'),
-            ('France'),
-            ('Gabon'),
-            ('Gambia'),
-            ('Georgia'),
-            ('Germany'),
-            ('Ghana'),
-            ('Greece'),
-            ('Grenada'),
-            ('Guatemala'),
-            ('Guinea'),
-            ('Guinea-Bissau'),
-            ('Guyana'),
-            ('Haiti'),
-            ('Holy See'),
-            ('Honduras'),
-            ('Hungary'),
-            ('Iceland'),
-            ('India'),
-            ('Indonesia'),
-            ('Iran'),
-            ('Iraq'),
-            ('Ireland'),
-            ('Israel'),
-            ('Italy'),
-            ('Jamaica'),
-            ('Japan'),
-            ('Jordan'),
-            ('Kazakhstan'),
-            ('Kenya'),
-            ('Kiribati'),
-            ('Kuwait'),
-            ('Kyrgyzstan'),
-            ('Laos'),
-            ('Latvia'),
-            ('Lebanon'),
-            ('Lesotho'),
-            ('Liberia'),
-            ('Libya'),
-            ('Liechtenstein'),
-            ('Lithuania'),
-            ('Luxembourg'),
-            ('Madagascar'),
-            ('Malawi'),
-            ('Malaysia'),
-            ('Maldives'),
-            ('Mali'),
-            ('Malta'),
-            ('Marshall Islands'),
-            ('Mauritania'),
-            ('Mauritius'),
-            ('Mexico'),
-            ('Micronesia'),
-            ('Moldova'),
-            ('Monaco'),
-            ('Mongolia'),
-            ('Montenegro'),
-            ('Morocco'),
-            ('Mozambique'),
-            ('Myanmar'),
-            ('Namibia'),
-            ('Nauru'),
-            ('Nepal'),
-            ('Netherlands'),
-            ('New Zealand'),
-            ('Nicaragua'),
-            ('Niger'),
-            ('Nigeria'),
-            ('North Korea'),
-            ('North Macedonia'),
-            ('Norway'),
-            ('Oman'),
-            ('Pakistan'),
-            ('Palau'),
-            ('Palestine State'),
-            ('Panama'),
-            ('Papua New Guinea'),
-            ('Paraguay'),
-            ('Peru'),
-            ('Philippines'),
-            ('Poland'),
-            ('Portugal'),
-            ('Qatar'),
-            ('Romania'),
-            ('Russia'),
-            ('Rwanda'),
-            ('Saint Kitts and Nevis'),
-            ('Saint Lucia'),
-            ('Saint Vincent and the Grenadines'),
-            ('Samoa'),
-            ('San Marino'),
-            ('Sao Tome and Principe'),
-            ('Saudi Arabia'),
-            ('Senegal'),
-            ('Serbia'),
-            ('Seychelles'),
-            ('Sierra Leone'),
-            ('Singapore'),
-            ('Slovakia'),
-            ('Slovenia'),
-            ('Solomon Islands'),
-            ('Somalia'),
-            ('South Africa'),
-            ('South Korea'),
-            ('South Sudan'),
-            ('Spain'),
-            ('Sri Lanka'),
-            ('Sudan'),
-            ('Suriname'),
-            ('Sweden'),
-            ('Switzerland'),
-            ('Syria'),
-            ('Tajikistan'),
-            ('Tanzania'),
-            ('Thailand'),
-            ('Timor-Leste'),
-            ('Togo'),
-            ('Tonga'),
-            ('Trinidad and Tobago'),
-            ('Tunisia'),
-            ('Turkey'),
-            ('Turkmenistan'),
-            ('Tuvalu'),
-            ('Uganda'),
-            ('Ukraine'),
-            ('United Arab Emirates'),
-            ('United Kingdom'),
-            ('United States of America'),
-            ('Uruguay'),
-            ('Uzbekistan'),
-            ('Vanuatu'),
-            ('Venezuela'),
-            ('Vietnam'),
-            ('Yemen'),
-            ('Zambia'),
-            ('Zimbabwe');
-
-        `).then(() => {
-            console.log('DB seeded!')
-            res.sendStatus(200)
-        }).catch(err => console.log('error seeding DB', err))
+        drop table if exists checklist;
+        
+        CREATE TABLE checklist (
+            item_id SERIAL PRIMARY KEY,
+            item_name VARCHAR(100) NOT NULL,
+            item_price NUMERIC(6,2) NOT NULL,
+            category VARCHAR NOT NULL);
+        
+        INSERT INTO checklist (item_name, item_price, category)
+            VALUES ('Collar', 15.00, 'Basic Supplies'), ('Water Bowl', 7.50, 'Basic Supplies'), ('Puppy Food', 45.50, 'Basic Supplies'), ('Puzzle Toy', 24.99, 'Dog Toys'), ('Chew Toys', 9.75, 'Dog Toys'), ('Ball', 2.25, 'Dog Toys'), ('Toothbrush', 6.25, 'Grooming Supplies'), ('Shampoo', 12.50, 'Grooming Supplies'), ('Vacuum', 250.00, 'Cleaning Supplies'), ('Pooper Scooper', 22.00, 'Cleaning Supplies'), ('Pet Insurance', 1200.00, 'Wellness'), ('Dog Trainer', 325.00, 'Wellness');
+    `).then(() => {
+        console.log('DB seeded!')
+        res.sendStatus(200)
+    }).catch(err => console.log('error seeding DB', err))
     },
-    getCountries: (req, res) => {
-        sequelize.query(`
-        SELECT *
-        FROM countries;`)
-            .then(dbRes => res.status(200).send(dbRes[0]))
-            .catch(err => console.log(err))
+   getChecklist: (req, res) => {
+    sequelize.query(`
+    SELECT *
+    FROM checklist;`)
+    .then(dbRes => res.status(200).send(dbRes[0]))
+    .catch(err => console.log(err))
     },
-    createCity: (req, res) => {
-        const {name, rating, countryId} = req.body
+    
+    createItem: (req, res) => {
+        const {item, price, category} = req.body
+        console.log(typeof req.body.item)
+        console.log(typeof req.body.price)
+        console.log(typeof req.body.category)
+        
         sequelize.query(`
-            INSERT INTO cities (name, rating, country_id)
-            VALUES ('${name}',
-            '${rating}', '${countryId}');
+            INSERT INTO checklist (item_name, item_price, category)
+            VALUES ('${item}',
+            '${price}', '${category}');
             `)
             .then(dbRes => res.status(200).send(dbRes[0]))
             .catch(err => console.log(err))
     },
-    
 
-    getCities: (req, res) => {
+    deleteItem: (req, res) => {
+        const itemId = req.params.item_id;
         sequelize.query(`
-        SELECT a.city_id, a.name AS city, a.rating, b.country_id, b.name AS country
-        FROM cities as a
-            JOIN countries as b
-                ON a.country_id = b.country_id
-        ORDER BY a.rating DESC;`)
-            .then(dbRes => res.status(200).send(dbRes[0]))
-            .catch(err => console.log(err))
-    },
-
-    deleteCity: (req, res) => {
-        const cityId = req.params.id;
-        sequelize.query(`
-            DELETE FROM cities 
-            WHERE city_id = ${cityId};
+            DELETE FROM checklist 
+            WHERE item_id = ${itemId};
             `)
             .then(dbRes => res.status(200).send(dbRes[0]))
             .catch(err => console.log(err))
     }
 }
+
+

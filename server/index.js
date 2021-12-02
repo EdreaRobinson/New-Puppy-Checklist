@@ -4,7 +4,7 @@ const app = express();
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const {SERVER_PORT} = process.env;
-const {seed, getChecklist, createItem, deleteItem} = require('./controller1.js');
+const {seed, getChecklist, createItem, deleteItem} = require('./controller.js');
 
 app.use(express.json());
 app.use(cors());

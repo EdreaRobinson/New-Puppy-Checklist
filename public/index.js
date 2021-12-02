@@ -3,16 +3,6 @@ const itemInput = document.querySelector('#item-input')
 const priceInput = document.querySelector('#price-input')
 const itemList = document.querySelector('#item-list')
 const categorySelect = document.querySelector('#category-select')
-// var catArray = {
-//     ValueA : 'Basic Supplies',
-//     ValueB : 'Grooming Supplies',
-//     ValueC : 'Wellness',
-//     ValueD : 'Dog Toys'
-// };
-// var categorySelect = document.getElementById('category-select');
-// for(index in catArray) {
-//     categorySelect.options[categorySelect.options.length] = new Option(catArray[index], index);
-// }
 
 function handleSubmit(e) {
     e.preventDefault()
@@ -43,7 +33,7 @@ function handleSubmit(e) {
     console.log(typeof body.category)
 }
 
-function deleteCard(id) {
+function deleteCard(item_id) {
     axios.delete(`http://localhost:4004/checklist/${item_id}`)
         .then(() => getChecklist())
         .catch(err => console.log(err))
@@ -59,7 +49,7 @@ function getChecklist() {
                     <h2>${elem.item_name}<h2>
                     <h3>Price: ${elem.item_price}</h3>
                     <h3>Category: ${elem.category}</h3>
-                    <button onclick="deleteItem(${elem['item_id']})">Delete</button>
+                    <button onclick="deleteCard(${elem['item_id']})">Delete</button>
                     </div>
                 `
 

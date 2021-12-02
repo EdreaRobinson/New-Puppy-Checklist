@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Puppy Checklist</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>New Puppy Checklist</h1>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Add an Item</h2>
+
+            <form>
+                <label for="item-input">Item:</label>
+                <input type="text" id="item-input"/>
+
+                <label for="price-input">Price:</label>
+                <input type="number" min="1" step="any" id="price-input"/>
+
+                <label for="category-select">Category:</label>
+                <select id="category-select"></select>
+
+                <h4></h4>
+                <div>
+
+                </div>
+                
+                <button>Add</button>
+            </form>
+        </aside>
+
+        <section id="item-list"></section>
+    </main>
+
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

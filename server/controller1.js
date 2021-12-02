@@ -41,6 +41,10 @@ module.exports = {
     
     createItem: (req, res) => {
         const {item, price, category} = req.body
+        console.log(typeof req.body.item)
+        console.log(typeof req.body.price)
+        console.log(typeof req.body.category)
+        
         sequelize.query(`
             INSERT INTO checklist (item_name, item_price, category)
             VALUES ('${item}',
@@ -49,6 +53,16 @@ module.exports = {
             .then(dbRes => res.status(200).send(dbRes[0]))
             .catch(err => console.log(err))
     },
+
+    deleteItem: (req, res) => {
+        const itemId = req.params.item_id;
+        sequelize.query(`
+            DELETE FROM checklist 
+            WHERE item_id = ${itemId};
+            `)
+            .then(dbRes => res.status(200).send(dbRes[0]))
+            .catch(err => console.log(err))
+    }
 }
 
 

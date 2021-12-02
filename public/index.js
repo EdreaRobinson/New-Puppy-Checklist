@@ -2,16 +2,17 @@ const form = document.querySelector('form')
 const itemInput = document.querySelector('#item-input')
 const priceInput = document.querySelector('#price-input')
 const itemList = document.querySelector('#item-list')
-var catArray = {
-    ValueA : 'Basic Supplies',
-    ValueB : 'Grooming Supplies',
-    ValueC : 'Wellness',
-    ValueD : 'Dog Toys'
-};
-var categorySelect = document.getElementById('category-select');
-for(index in catArray) {
-    categorySelect.options[categorySelect.options.length] = new Option(catArray[index], index);
-}
+const categorySelect = document.querySelector('#category-select')
+// var catArray = {
+//     ValueA : 'Basic Supplies',
+//     ValueB : 'Grooming Supplies',
+//     ValueC : 'Wellness',
+//     ValueD : 'Dog Toys'
+// };
+// var categorySelect = document.getElementById('category-select');
+// for(index in catArray) {
+//     categorySelect.options[categorySelect.options.length] = new Option(catArray[index], index);
+// }
 
 function handleSubmit(e) {
     e.preventDefault()
@@ -21,11 +22,11 @@ function handleSubmit(e) {
         return
     }
 
-    // let userRating = document.querySelector('input[name="rating"]:checked').value
+
     let body = {
-        name: +itemInput.value, 
+        name: itemInput.value, 
         price: +priceInput.value, 
-        category: +categorySelect.value
+        category: categorySelect.value
     }
 
     axios.post('http://localhost:4004/checklist', body)
@@ -34,10 +35,16 @@ function handleSubmit(e) {
             itemInput.value = ''
             priceInput.value = ''
         })
+
+    console.log(body.name)
+    console.log(body.category)
+    console.log(typeof body.name)
+    console.log(typeof body.price)
+    console.log(typeof body.category)
 }
 
 function deleteCard(id) {
-    axios.delete(`http://localhost:4004/checklist/${id}`)
+    axios.delete(`http://localhost:4004/checklist/${item_id}`)
         .then(() => getChecklist())
         .catch(err => console.log(err))
 }
@@ -61,18 +68,6 @@ function getChecklist() {
         })
 }
 
-// function getChecklist() {
-//     axios.get('http://localhost:4004/checklist')
-//         .then(res => {
-//             res.data.forEach(item => {
-//                 const option = document.createElement('option')
-//                 option.setAttribute('value', item['item_id'])
-//                 option.textContent = item.name
-//                 itemSelect.appendChild(option)
-//             })
-//         })
-// }
-
 getChecklist()
-// getCities()
+
 form.addEventListener('submit', handleSubmit)

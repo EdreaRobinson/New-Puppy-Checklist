@@ -14,7 +14,7 @@ function handleSubmit(e) {
 
 
     let body = {
-        name: itemInput.value, 
+        item: itemInput.value, 
         price: +priceInput.value, 
         category: categorySelect.value
     }
@@ -26,9 +26,9 @@ function handleSubmit(e) {
             priceInput.value = ''
         })
 
-    console.log(body.name)
+    console.log(body.item)
     console.log(body.category)
-    console.log(typeof body.name)
+    console.log(typeof body.item)
     console.log(typeof body.price)
     console.log(typeof body.category)
 }

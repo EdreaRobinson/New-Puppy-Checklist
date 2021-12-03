@@ -5,12 +5,76 @@
 }
 
 header {
-    background-color: teal;
-    color: white;
+    display: flex;
+    margin-left: 72px;
+    margin-right: 72px;
+    margin-top: 20px;
+}
+body {
+    background: -moz-radial-gradient(center, #aaaaaa 0%, #7a7a7a 66%, #595959 100%);
+    background: -webkit-radial-gradient(center, #aaaaaa 0%, #595959 66%, #7a7a7a 100%);
+    background: radial-gradient(ellipse at center, #595959 0%, #595959 66%, #444444 100%);
 }
 
 h1 {
     padding: 20px;
+    color: #E45319;
+    font-family: Sedgwick Ave Display; 
+    font-size: 100px; 
+    font-style: normal;
+    letter-spacing: 7px; 
+    font-variant: small-caps; 
+    -webkit-text-stroke: 0.5px #CFCFCF;
+    text-shadow:0 4px 8px #666, 0 6px 16px #999;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    color: #BF1363;
+    font-family: Actor;
+    font-size: 48px;
+    font-style: bold;
+    font-weight: 500;
+    text-align: center;
+    font-variant: small-caps;
+    margin: auto;
+    text-align: center;
+}
+
+h3 {
+    color: #68C3D4;
+    font-family: Handlee;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    font-variant: small-caps;
+    margin: auto;
+}
+
+h4 {
+    color: #aaaaaa;
+    font-family: Actor;
+    font-size: 26px;
+    font-style: bold;
+    font-weight: 500;
+    text-align: center;
+    font-variant: small-caps;
+    text-shadow:0 4px 8px #BF1363, 0 6px 16px #7a7a7a;
+    margin: auto;
+    text-align: center;
+}
+
+h5 {
+    color: #68C3D4;
+    font-family: Handlee;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    font-variant: small-caps;
+    margin: auto;
 }
 
 main {
@@ -18,6 +82,10 @@ main {
 }
 
 aside {
+    margin: 20px;
+    background-color: #272727;
+    border: 5px solid #E45319;
+    padding: 20px;
     margin: 20px;
 }
 
@@ -30,21 +98,69 @@ form {
     margin-top: 20px;
 }
 
-.radio {
-    display: flex;
-}
-
 .item-card {
-    border: 1px solid black;
+    border: 5px solid #E45319;
     padding: 20px;
     margin: 20px;
+    background-color: #272727;
+    text-align: center;
 }
 
-.item-card > h2 {
+.item-card > h4 {
     margin-bottom: 10px;
 }
 
 .item-card > button {
     margin-top: 10px;
     padding: 2px 10px;
+}
+
+#item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+#category-select {
+    color: #F39237;
+    font-family: Handlee;
+    font-size: 24px;
+    font-style: bold;
+    background-color: #444444;
+    text-align: center;
+}
+
+#item-input {
+    color: #F39237;
+    font-family: Handlee;
+    font-size: 24px;
+    font-style: bold;
+    background-color: #444444;
+    text-align: center;
+}
+
+#price-input {
+    color: #F39237;
+    font-family: Handlee;
+    font-size: 24px;
+    font-style: bold;
+    background-color: #444444;
+    text-align: center;
+}
+
+#submit-btn {
+    background-color: #7DDF64;
+    font-family: Grechen+Fuemen;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+#delete-btn {
+    background-color: #7DDF64;
+    font-family: Grechen+Fuemen;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
 }

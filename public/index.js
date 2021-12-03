@@ -4,6 +4,11 @@ const priceInput = document.querySelector('#price-input')
 const itemList = document.querySelector('#item-list')
 const categorySelect = document.querySelector('#category-select')
 
+
+
+
+
+
 function handleSubmit(e) {
     e.preventDefault()
 
@@ -25,12 +30,7 @@ function handleSubmit(e) {
             itemInput.value = ''
             priceInput.value = ''
         })
-
-    console.log(body.item)
-    console.log(body.category)
-    console.log(typeof body.item)
-    console.log(typeof body.price)
-    console.log(typeof body.category)
+    location.reload(true/false);
 }
 
 function deleteCard(item_id) {
@@ -46,10 +46,10 @@ function getChecklist() {
         .then(res => {
             res.data.forEach(elem => {
                 let itemCard = `<div class="item-card">
-                    <h2>${elem.item_name}<h2>
-                    <h3>Price: ${elem.item_price}</h3>
-                    <h3>Category: ${elem.category}</h3>
-                    <button onclick="deleteCard(${elem['item_id']})">Delete</button>
+                    <h4>${elem.item_name}<h4>
+                    <h3>Price: ${elem.item_price}</h3><br>
+                    <h3>Category:</h3><h3>${elem.category}</h3><br>
+                    <button id="delete-btn" onclick="deleteCard(${elem['item_id']})">Delete</button>
                     </div>
                 `
 
@@ -59,5 +59,4 @@ function getChecklist() {
 }
 
 getChecklist()
-
 form.addEventListener('submit', handleSubmit)

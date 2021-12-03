@@ -1,50 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Puppy Checklist</title>
-    <link rel="stylesheet" href="index.css">
+	<title>Juicebox Gallery</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" id="jb-viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=0" />
+	<meta name="description" content="" />
+
+	<!-- START OPEN GRAPH TAGS-->
+	<meta property="og:title" content="Juicebox Gallery" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="" />
+	<!-- END OPEN GRAPH TAGS-->
+
+	<style type="text/css">
+	body {
+		margin: 0px;
+	}
+	</style>
 </head>
 <body>
-    <header>
-        <h1>New Puppy Checklist</h1>
-    </header>
-
-    <main>
-        <aside>
-            <h2>Add an Item</h2>
-
-            <form>
-                <label for="item-input">Item:</label>
-                <input id="item-input"/>
-
-                <label for="price-input">Price:</label>
-                <input type="number" min="1" step="any" id="price-input"/>
-
-                <label for="category-select">Category:</label>
-                <select id="category-select">
-                    <option value ="Basic Supplies">Basic Supplies</option>
-                    <option value ="Grooming Supplies">Grooming Supplies</option>
-                    <option value ="Dog Toys">Dog Toys</option>
-                    <option value ="Wellness">Basic Supplies</option>
-                </select>
-
-
-                <h4></h4>
-                <div>
-
-                </div>
-                
-                <button>Add</button>
-            </form>
-        </aside>
-
-        <section id="item-list"></section>
-    </main>
-
-    <script src="../node_modules/axios/dist/axios.min.js"></script>
-    <script src="index.js"></script>
+	<!--START JUICEBOX EMBED-->
+	<script src="jbcore/juicebox.js"></script>
+	<script>
+	new juicebox({
+		containerId: 'juicebox-container',
+		galleryWidth: '100%',
+		galleryHeight: '100%',
+		backgroundColor: 'rgba(255,102,0,1)'
+	});
+	</script>
+	<div id="juicebox-container"></div>
+	<!--END JUICEBOX EMBED-->
 </body>
 </html>

@@ -34,17 +34,14 @@ module.exports = {
    getChecklist: (req, res) => {
     sequelize.query(`
     SELECT *
-    FROM checklist;`)
+    FROM checklist
+    ORDER BY item_id DESC;`)
     .then(dbRes => res.status(200).send(dbRes[0]))
     .catch(err => console.log(err))
     },
     
     createItem: (req, res) => {
         const {item, price, category} = req.body
-        console.log(typeof req.body.item)
-        console.log(typeof req.body.price)
-        console.log(typeof req.body.category)
-        
         sequelize.query(`
             INSERT INTO checklist (item_name, item_price, category)
             VALUES ('${item}',

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Puppy Checklist</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Arizonia&family=Bonheur+Royale&family=Calligraffitti&family=Comforter+Brush&family=Grechen+Fuemen&family=Handlee&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link>
+</head>
+<body>
+    <header>
+    <a href="mybabies.html">
+        <img id="logo" src="images\SCFLogo.PNG" width="200" height="150">
+    </a>
+        <h1>New Puppy Checklist</h1>
+    <a href="mybabies.html">    
+        <img id="logo" src="images\SCFLogo.PNG" width="200" height="150">
+    </a>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Add an Item</h2>
+
+            <form>
+                <label for="item-input"><h5>Item:</h5></label>
+                <input id="item-input"/><br>
+
+                <label for="price-input"><h5>Price:</h5></label>
+                <input type="number" min="1" step="any" id="price-input"/><br>
+
+                <label for="category-select"><h5>Category:</h5></label>
+                <select id="category-select">
+                    <option value ="Basic Supplies">Basic Supplies</option>
+                    <option value ="Grooming Supplies">Grooming Supplies</option>
+                    <option value ="Dog Toys">Dog Toys</option>
+                    <option value ="Wellness">Wellness</option>
+                </select>
+
+
+                <h4></h4>
+                <div>
+
+                </div>
+                
+                <button id="submit-btn">Add</button>
+            </form>
+        </aside>
+
+        <section id="item-list"></section>
+    </main>
+
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

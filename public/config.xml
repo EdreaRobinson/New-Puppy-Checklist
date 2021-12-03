@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	useThumbDots="true"
+	backgroundColor="rgba(255,102,0,1)"
+
+>
+  <image imageURL="images/Image 1.jpg"
+	thumbURL="thumbs/Image 1.jpg"
+	linkURL="images/Image 1.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\Image 1.png">
+    <title><![CDATA[Image 1]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image2.jpg"
+	thumbURL="thumbs/image2.jpg"
+	linkURL="images/image2.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image2.JPEG">
+    <title><![CDATA[image2]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image4.jpg"
+	thumbURL="thumbs/image4.jpg"
+	linkURL="images/image4.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image4.jpg">
+    <title><![CDATA[image4]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image5.jpg"
+	thumbURL="thumbs/image5.jpg"
+	linkURL="images/image5.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image5.jpg">
+    <title><![CDATA[image5]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image6.jpg"
+	thumbURL="thumbs/image6.jpg"
+	linkURL="images/image6.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image6.jpg">
+    <title><![CDATA[image6]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image7.jpg"
+	thumbURL="thumbs/image7.jpg"
+	linkURL="images/image7.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image7.jpg">
+    <title><![CDATA[image7]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image8.jpg"
+	thumbURL="thumbs/image8.jpg"
+	linkURL="images/image8.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image8.jpg">
+    <title><![CDATA[image8]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image9.jpg"
+	thumbURL="thumbs/image9.jpg"
+	linkURL="images/image9.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image9.jpg">
+    <title><![CDATA[image9]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image10.jpg"
+	thumbURL="thumbs/image10.jpg"
+	linkURL="images/image10.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image10.jpg">
+    <title><![CDATA[image10]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image11.jpg"
+	thumbURL="thumbs/image11.jpg"
+	linkURL="images/image11.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image11.jpg">
+    <title><![CDATA[image11]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image12.jpg"
+	thumbURL="thumbs/image12.jpg"
+	linkURL="images/image12.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image12.jpg">
+    <title><![CDATA[image12]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image13.jpg"
+	thumbURL="thumbs/image13.jpg"
+	linkURL="images/image13.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image13.jpg">
+    <title><![CDATA[image13]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image14.jpg"
+	thumbURL="thumbs/image14.jpg"
+	linkURL="images/image14.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image14.jpg">
+    <title><![CDATA[image14]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image15.jpg"
+	thumbURL="thumbs/image15.jpg"
+	linkURL="images/image15.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image15.jpg">
+    <title><![CDATA[image15]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image16.jpg"
+	thumbURL="thumbs/image16.jpg"
+	linkURL="images/image16.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image16.jpg">
+    <title><![CDATA[image16]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image17.jpg"
+	thumbURL="thumbs/image17.jpg"
+	linkURL="images/image17.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image17.jpg">
+    <title><![CDATA[image17]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image19.jpg"
+	thumbURL="thumbs/image19.jpg"
+	linkURL="images/image19.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image19.jpg">
+    <title><![CDATA[image19]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image20.jpg"
+	thumbURL="thumbs/image20.jpg"
+	linkURL="images/image20.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image20.jpg">
+    <title><![CDATA[image20]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image21.jpg"
+	thumbURL="thumbs/image21.jpg"
+	linkURL="images/image21.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image21.jpg">
+    <title><![CDATA[image21]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image22.jpg"
+	thumbURL="thumbs/image22.jpg"
+	linkURL="images/image22.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image22.jpg">
+    <title><![CDATA[image22]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image23.jpg"
+	thumbURL="thumbs/image23.jpg"
+	linkURL="images/image23.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image23.jpg">
+    <title><![CDATA[image23]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image24.jpg"
+	thumbURL="thumbs/image24.jpg"
+	linkURL="images/image24.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image24.jpg">
+    <title><![CDATA[image24]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image25.jpg"
+	thumbURL="thumbs/image25.jpg"
+	linkURL="images/image25.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image25.JPEG">
+    <title><![CDATA[image25]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image26.jpg"
+	thumbURL="thumbs/image26.jpg"
+	linkURL="images/image26.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image26.JPEG">
+    <title><![CDATA[image26]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image27.jpeg"
+	thumbURL="thumbs/image27.jpeg"
+	linkURL="images/image27.jpeg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image27.jpeg">
+    <title><![CDATA[image27]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image28.jpeg"
+	thumbURL="thumbs/image28.jpeg"
+	linkURL="images/image28.jpeg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image28.jpeg">
+    <title><![CDATA[image28]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image29.jpg"
+	thumbURL="thumbs/image29.jpg"
+	linkURL="images/image29.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image29.JPEG">
+    <title><![CDATA[image29]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image30.jpg"
+	thumbURL="thumbs/image30.jpg"
+	linkURL="images/image30.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image30.JPEG">
+    <title><![CDATA[image30]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image31.jpeg"
+	thumbURL="thumbs/image31.jpeg"
+	linkURL="images/image31.jpeg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image31.jpeg">
+    <title><![CDATA[image31]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image32.jpeg"
+	thumbURL="thumbs/image32.jpeg"
+	linkURL="images/image32.jpeg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image32.jpeg">
+    <title><![CDATA[image32]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image33.jpg"
+	thumbURL="thumbs/image33.jpg"
+	linkURL="images/image33.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image33.JPG">
+    <title><![CDATA[image33]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image35.jpeg"
+	thumbURL="thumbs/image35.jpeg"
+	linkURL="images/image35.jpeg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image35.jpeg">
+    <title><![CDATA[image35]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image36.jpg"
+	thumbURL="thumbs/image36.jpg"
+	linkURL="images/image36.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image36.JPG">
+    <title><![CDATA[image36]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image37.jpeg"
+	thumbURL="thumbs/image37.jpeg"
+	linkURL="images/image37.jpeg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image37.jpeg">
+    <title><![CDATA[image37]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image38.jpeg"
+	thumbURL="thumbs/image38.jpeg"
+	linkURL="images/image38.jpeg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image38.jpeg">
+    <title><![CDATA[image38]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image39.jpeg"
+	thumbURL="thumbs/image39.jpeg"
+	linkURL="images/image39.jpeg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image39.jpeg">
+    <title><![CDATA[image39]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image40.jpeg"
+	thumbURL="thumbs/image40.jpeg"
+	linkURL="images/image40.jpeg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image40.jpeg">
+    <title><![CDATA[image40]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image41.jpg"
+	thumbURL="thumbs/image41.jpg"
+	linkURL="images/image41.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image41.JPG">
+    <title><![CDATA[image41]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image42.jpeg"
+	thumbURL="thumbs/image42.jpeg"
+	linkURL="images/image42.jpeg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image42.jpeg">
+    <title><![CDATA[image42]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image43.jpeg"
+	thumbURL="thumbs/image43.jpeg"
+	linkURL="images/image43.jpeg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image43.jpeg">
+    <title><![CDATA[image43]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image44.jpeg"
+	thumbURL="thumbs/image44.jpeg"
+	linkURL="images/image44.jpeg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image44.jpeg">
+    <title><![CDATA[image44]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image45.jpg"
+	thumbURL="thumbs/image45.jpg"
+	linkURL="images/image45.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image45.JPEG">
+    <title><![CDATA[image45]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image46.jpg"
+	thumbURL="thumbs/image46.jpg"
+	linkURL="images/image46.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image46.JPEG">
+    <title><![CDATA[image46]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image47.jpg"
+	thumbURL="thumbs/image47.jpg"
+	linkURL="images/image47.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image47.JPEG">
+    <title><![CDATA[image47]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image48.jpg"
+	thumbURL="thumbs/image48.jpg"
+	linkURL="images/image48.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image48.JPEG">
+    <title><![CDATA[image48]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image49.jpeg"
+	thumbURL="thumbs/image49.jpeg"
+	linkURL="images/image49.jpeg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image49.jpeg">
+    <title><![CDATA[image49]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image50.jpg"
+	thumbURL="thumbs/image50.jpg"
+	linkURL="images/image50.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image50.JPEG">
+    <title><![CDATA[image50]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image56.jpg"
+	thumbURL="thumbs/image56.jpg"
+	linkURL="images/image56.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image56.JPEG">
+    <title><![CDATA[image56]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/image61.jpg"
+	thumbURL="thumbs/image61.jpg"
+	linkURL="images/image61.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\Edrea\Desktop\Perficient - Devmountain\Capstone-Foundations EHR\public\images\image61.JPEG">
+    <title><![CDATA[image61]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+</juiceboxgallery>

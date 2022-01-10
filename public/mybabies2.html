@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Babies 2</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Arizonia&family=Bonheur+Royale&family=Calligraffitti&family=Comforter+Brush&family=Grechen+Fuemen&family=Handlee&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link>
+</head>
+<body onload="displayImages()">
+    <header>
+    <a href="puppyChecklist.html">
+        <img id="logo" src="images\SCFLogo.PNG" width="200" height="150">
+    </a>
+        <h1>Some of my babies...</h1>
+    <a href="puppyChecklist.html">    
+        <img id="logo" src="images\SCFLogo.PNG" width="200" height="150">
+    </a>
+    </header>
+
+
+    <img id="images">
+
+ <script>
+
+let images = document.querySelector('#images');
+
+function displayImages(){
+         var image = ['images/image1.jpg', 
+                    'images/image2.jpg', 
+                    'images/image4.jpg', 
+                    'images/image5.jpg', 
+                    'images/image6.jpg', 
+                    'images/image7.jpg', 
+                    'images/image8.jpg', 
+                    'images/image9.jpg', 
+                    'images/image10.jpg', 
+                    'images/image11.jpg', 
+                    'images/image12.jpg', 
+                    'images/image13.jpg', 
+                    'images/image14.jpg', 
+                    'images/image15.jpg', 
+                    'images/image16.jpg', 
+                    'images/image17.jpg', 
+                    'images/image19.jpg', 
+                    'images/image20.jpg', 
+                    'images/image21.jpg', 
+                    'images/image22.jpg', 
+                    'images/image23.jpg', 
+                    'images/image24.jpg', 
+                    'images/image25.jpg', 
+                    'images/image26.jpg', 
+                    'images/image27.jpeg',
+                    'images/image28.jpeg',
+                    'images/image29.jpg',
+                    'images/image30.jpg',
+                    'images/image31.jpeg',
+                    'images/image32.jpeg',
+                    'images/image33.jpg',
+                    'images/image35.jpeg',
+                    'images/image36.jpg',
+                    'images/image37.jpeg',
+                    'images/image38.jpeg',
+                    'images/image39.jpeg',
+                    'images/image40.jpeg',
+                    'images/image41.jpg',
+                    'images/image42.jpeg',
+                    'images/image43.jpeg',
+                    'images/image44.jpeg',
+                    'images/image45.jpg',
+                    'images/image46.jpg',
+                    'images/image47.jpg',
+                    'images/image48.jpg',
+                    'images/image49.jpeg',
+                    'images/image50.jpg',
+                    'images/image56.jpg',
+                    'images/image61.jpg'];
+        var container = document.getElementById("images");
+            for (var i=0, len = image.length; i < len; ++i) {
+                var img = new Image();
+                img.src = image[i];
+                container.appendChild(img);
+            }   
+images.addEventListener('load', (displayImages))
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
